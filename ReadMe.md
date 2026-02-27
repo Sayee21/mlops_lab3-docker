@@ -21,3 +21,9 @@ docker build -t sayee-lab3 .
 
 # Run container
 docker run -p 8080:8000 sayee-lab3
+# Check Docker
+# 1. SHOW DOCKER PROOF
+docker ps
+
+# 2. SHOW PORT MAPPING
+docker port [container_id]
