@@ -12,12 +12,14 @@
 ## 📋 Overview
 Containerized FastAPI ML prediction API (iris classification). Upgraded from Lab1 Flask → Production Docker deployment.
 
-## 
-**Docker Port Mapping EXPLANATION:**
+## Docker Port Mapping EXPLANATION:
 docker run -p 8080:8000 sayee-lab3
+
       ↑HOST PORT      ↑CONTAINER PORT
 localhost:8080 → container:8000 (uvicorn)
-**BROWSER:** http://localhost:8000/ ←  CURRENT PORT!
+
+## BROWSER:
+http://localhost:8000/ ←  CURRENT PORT!
 In Lab3, Uvicorn runs inside a Docker container on 0.0.0.0:8000, and Docker maps that to localhost:8080 on my host.
 That’s why I open http://localhost:8080 in the browser, which matches the port mapping shown by docker ps (8080->8000).
 
