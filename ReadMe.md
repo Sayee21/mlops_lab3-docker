@@ -18,13 +18,13 @@ docker run -p 8080:8000 sayee-lab3
       ↑HOST PORT      ↑CONTAINER PORT
 localhost:8080 → container:8000 (uvicorn)
 
-## BROWSER:
+** BROWSER:** 
 http://localhost:8000/ ←  CURRENT PORT!
 In Lab3, Uvicorn runs inside a Docker container on 0.0.0.0:8000, and Docker maps that to localhost:8080 on my host.
 That’s why I open http://localhost:8080 in the browser, which matches the port mapping shown by docker ps (8080->8000).
 
 **Terminal shows "0.0.0.0:8000" = INSIDE container only!**
-**Browser uses:** `localhost:8080` (YOUR port mapping!) ✓
+**Browser uses:** `localhost:8080` ( port mapping!) 
 
 ### Run:
 ## 🚀 Quick Start
